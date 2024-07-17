@@ -15,8 +15,6 @@ public static void main(String...args){
 
 	}
 
-	//System.out.printf("%d x %d = %d", number, count, result);
-
 	}
 
 }

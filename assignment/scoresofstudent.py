@@ -1,6 +1,6 @@
 passed = 0
 failed = 0
-for score in range (1,6):
+for score in range (1,16):
 	score = int(input("Enter student score: "))
 
 	if score >=  45 and score <= 100:
