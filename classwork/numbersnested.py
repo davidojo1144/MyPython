@@ -1,6 +1,6 @@
-for i in range (5,0,-1):
-	for j in range (i,0,-1):
-		print(j,end=" ")
-print(i)
+for number in range (10,0,-1):
+	for digit in range (number,0,-1):
+		print(digit,end=" ")
+	print()
 	
 			

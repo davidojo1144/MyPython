@@ -26,7 +26,7 @@ public class Game{
 		if (user > numbers) System.out.println("Too large, Try again!");
 		else if (user < numbers) System.out.println("Too small, Try again!");
 		
-		if (user == numbers && user <=10){
+		if (user == numbers){
 		System.out.print("Congratulations! You have guessed right");
 		}
 
