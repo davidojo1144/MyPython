@@ -7,7 +7,7 @@ def only_floats(a, b):
 	else:
 		return 0
 
-results = only_floats(a, b):
+results = only_floats(a, b)
 print(results)
 
 

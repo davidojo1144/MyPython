@@ -1,5 +1,5 @@
-number_string = ["2", "3", "4", "6", "8", "9", "10"]
-number_int = [int(number) for number in number_string]
+number_str = ["2", "3", "4", "6", "8", "9", "10", "11"]
+number_int = [int(number) for number in number_str]
 
 def biggest_odd(number_int):
 	odd_number = [number for number in number_int if number % 2 != 0]
