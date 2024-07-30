@@ -1,14 +1,28 @@
 
 def reverse(number):
-	#value_one = number % 10
-	#value_two = number / 10
-	#value_three = number % 10
-	#value_four = number / 10
+	value_one = number % 10
+	value_two = number // 10
+	value_three = value_two % 10
+	value_four = value_two // 10
+	result = str(value_one) + str(value_three) + str(value_four)
+	return result
 
-	number.reverse()
-	return number
 
-print(reverse([4,5,6]))
+
+def palindrome(number):
+	value_one = number % 10
+	value_two = number // 10
+	value_three = value_two % 10
+	value_four = value_two // 10
+
+	if value_one == value_four:
+		return True
+
+	if value_one != value_four:
+		return False
+
+print(reverse(456))
+print(palindrome(787))
 
 
 
