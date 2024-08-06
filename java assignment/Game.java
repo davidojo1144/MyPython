@@ -8,7 +8,7 @@ public class Game{
 	Scanner scanner = new Scanner(System.in);
 
 	Random rand = new Random();
-	int numbers = rand.nextInt(1,100);
+	int numbers = rand.nextInt(1,1000);
 
 	System.out.println("This is a guessing game. \ni'd love you to choose between 1 to 1000.");
 	System.out.println("Let start the game.");
