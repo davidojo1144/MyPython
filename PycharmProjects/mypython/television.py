@@ -23,11 +23,8 @@ class Television:
             raise ValueError("Channel must be greater than or equal to 1")
 
     def channel_can_increase(self,channel):
-        if channel < 1 or channel > 100:
-            raise ValueError("Channel must be between 1 and 100")
-        else :
-            self.channel = channel
-
+        if self.channel >= 1 and self.channel < 100:
+            return channel + 1
 
 
 

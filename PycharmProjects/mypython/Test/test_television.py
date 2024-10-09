@@ -53,6 +53,6 @@ class TestTelevision(unittest.TestCase):
         tele.get_channel()
         result = tele.check_channel_is_one_channel_one(1)
         self.assertFalse(result)
-        tele.channel_can_increase()
+        tele.channel_can_increase(1)
 
 
