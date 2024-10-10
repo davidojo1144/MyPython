@@ -3,7 +3,6 @@ class Ac:
     def __init__(self):
         self.is_off = False
         self.increment = 1
-        self.decrement = 1
         self.highest_temp = 30
         self.lowest_temp = 16
 
@@ -23,7 +22,7 @@ class Ac:
 
 
     def check_ac_temperature_decreased(self, temperature):
-        return temperature - self.decrement
+        return temperature - self.increment
 
 
     def ac_temp_cannot_go_beyond_30(self, temperature):
