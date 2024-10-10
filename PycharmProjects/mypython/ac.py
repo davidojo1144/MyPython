@@ -1,21 +1,25 @@
 class Ac:
 
     def __init__(self):
-        self.is_off = False
+        self.is_on = False
         self.increment = 1
         self.highest_temp = 30
         self.lowest_temp = 16
 
 
-    def check_ac_is_off(self):
-        return self.is_off
+    def ac_is_off(self):
+        return self.is_on
 
 
-    def check_ac_has_been_switched_on(self):
-        return self.is_off == True
+    def ac_can_be_turned_on(self):
+        self.is_on = True
+        return self.is_on
 
-    def check_ac_is_on(self):
-        return self.is_off == True
+
+    def ac_is_on(self):
+        self.is_on = True
+        return self.is_on
+
 
     def check_ac_temperature_increased(self, temperature):
         return temperature + self.increment

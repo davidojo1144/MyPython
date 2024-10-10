@@ -15,10 +15,13 @@ class Bike:
         return self.is_on
 
     def bike_can_be_turned_on(self):
-        return self.is_on == True
+        self.is_on = True
+        return self.is_on
 
     def bike_is_on(self):
-        return self.is_on == True
+        self.is_on = True
+        return self.is_on
+
 
     def bike_can_be_turned_off(self):
         return self.is_on

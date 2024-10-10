@@ -6,25 +6,25 @@ class TestBike(unittest.TestCase):
 
     def test_bike_is_off(self):
         bike = Bike()
-        bike.bike_is_off()
+        self.assertFalse(bike.bike_is_off())
 
     def test_that_bike_can_turned_on(self):
         bike = Bike()
         bike.bike_is_off()
-        bike.bike_can_be_turned_on()
+        self.assertTrue(bike.bike_can_be_turned_on())
 
     def test_that_bike_is_on(self):
         bike = Bike()
         bike.bike_is_off()
         bike.bike_is_on()
-        bike.bike_is_on()
+        self.assertTrue(bike.bike_is_on())
 
     def test_that_bike_can_be_turned_off(self):
         bike = Bike()
         bike.bike_is_off()
         bike.bike_can_be_turned_on()
         bike.bike_is_on()
-        bike.bike_can_be_turned_off()
+        self.assertTrue(bike.bike_can_be_turned_off())
 
     def test_that_bike_can_accelerate_on_gear_one(self ):
         bike = Bike()
